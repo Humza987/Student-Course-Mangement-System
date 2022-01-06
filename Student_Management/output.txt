@@ -1,0 +1,4 @@
+Name: eor lady
+Courses Enrolled: []
+Tuition amount: 0
+ Student Email: eor.lady@student.edu
