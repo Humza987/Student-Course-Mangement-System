@@ -1,2 +1,2 @@
-# Java-Billing-System
+# Java-Student-Course-Mangament-System
  
