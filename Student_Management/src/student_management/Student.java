@@ -40,11 +40,7 @@ public class Student {
 		menu();
 	}
 	
-	public void hasBeen() {
-		System.out.println("This user has been previously logged in (all info saved)");
-		while(true) {
-		}
-	}
+
 
 	public String StudentEmail() {
 		return String.format("%s.%s@student.edu", firstname, lastname);
@@ -173,3 +169,9 @@ public class Student {
 //		scanner.next();
 //	}
 //} while(error);
+
+//public void hasBeen() {
+//System.out.println("This user has been previously logged in (all info saved)");
+//while(true) {
+//}
+//}

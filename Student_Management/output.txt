@@ -1,4 +1,4 @@
-Name: eor lady
-Courses Enrolled: []
-Tuition amount: 0
- Student Email: eor.lady@student.edu
+Name: ads asd
+Courses Enrolled: [Physics 101, Calculus 101]
+Tuition amount: 1600
+ Student Email: ads.asd@student.edu

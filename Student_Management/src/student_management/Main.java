@@ -13,14 +13,6 @@ public class Main {
 	
 		
 		students[i].StudentSetup();
-		for(int j=0; j<i;j++) {
-			if(name[j].equals(students[j].firstname)) {
-				students[i].hasBeen();
-			}
-			else {
-				name[i] = students[i].firstname;
-			}
-		}
 		if(students[i].choice1==1) {
 			students[i].enrol();
 		}
