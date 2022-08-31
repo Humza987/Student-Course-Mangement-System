@@ -1,4 +1,4 @@
-Name: ads asd
-Courses Enrolled: [Physics 101, Calculus 101]
-Tuition amount: 1600
- Student Email: ads.asd@student.edu
+Name: a a
+Courses Enrolled: [Physics 101]
+Tuition amount: 800
+Student Email: a.a@student.edu
