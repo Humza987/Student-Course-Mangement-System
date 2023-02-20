@@ -14,7 +14,6 @@ public class Student {
 	private int tuition;
 	private Scanner scanner = new Scanner(System.in);
 	private boolean Proceed2;
-//	public int choice1;
 	private ArrayList<String> CoursesEnrolled;
 	private ArrayList<String> CoursesOffered;
 	private ArrayList<String> CorusesDropped;
@@ -25,6 +24,8 @@ public class Student {
 	private boolean Proceed;
 	String[] name = new String[5];
 	public boolean Switch = false;
+	public boolean newStudent = false;
+	public boolean Back = false;
 
 
 	public Student() {
@@ -44,7 +45,6 @@ public class Student {
 		this.lastname = scanner.next();
 		this.fullname = firstname+" "+lastname;
 		
-		System.out.println("Name: " + fullname);
 		menu();
 	}
 	
@@ -57,11 +57,11 @@ public class Student {
 	}
 
 	public void menu() {
-		
+		System.out.println("Name: " + fullname);
 		System.out.println("What do you want to do?");
-		System.out.println(" 1-Manage Courses \n 2-Check Tuition \n 3-Print Transcript to file");
+		System.out.println(" 1-Manage Courses \n 2-Check Tuition \n 3-Print Transcript to file \n 4-New Student \n 5-Go back to Previous Student");
 		Proceed2=false;
-		while(!Proceed2) {
+		while(!Proceed2) { 
 			try {
 				int choice1 = scanner.nextInt();
 				scanner.nextLine();
@@ -69,21 +69,25 @@ public class Student {
 					Proceed2 = true;
 					enrol();
 				}
-				if(choice1 == 2) {
+				else if(choice1 == 2) {
 					Proceed2 = true;
 					tuition();
 				}
-				if(choice1 == 3) {
+				else if(choice1 == 3) {
 					Proceed2 = true;
 
 					System.out.println(toString());
 					menu();
 				}
-				if(choice1 == 4) {
-						Switch = true;
-						Proceed2 = true;
-
-				//	StudentSetup();
+				else if(choice1 == 4) {
+					Proceed2 = true;
+					Switch = true;
+					newStudent = true;
+					}
+				else if(choice1 == 5) {
+					Proceed2 = true;
+					Switch = true;
+					Back = true;
 					}
 				else {
 					System.out.println("Wrong Input! Try Again");
@@ -163,22 +167,3 @@ public class Student {
 		return s;
 	}
 }
-
-//System.out.println("Enter Year of Study (Number only) \n 1-Freshman \n 2-Sophmore\n 3-Junior\n 4-Senior");
-//do {
-//	error = false;
-//	try {
-//		this.yearOfStudy=scanner.nextInt();
-//	}
-//	catch(InputMismatchException e) {
-//		System.out.println("Wrong Input! Try again");
-//		error = true;
-//		scanner.next();
-//	}
-//} while(error);
-
-//public void hasBeen() {
-//System.out.println("This user has been previously logged in (all info saved)");
-//while(true) {
-//}
-//}
